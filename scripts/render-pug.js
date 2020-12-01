@@ -14,7 +14,7 @@ module.exports = function renderPug(filePath) {
         doctype: 'html',
         filename: filePath,
         basedir: srcPath
-    });
+    }); 
 
     const destPathDirname = upath.dirname(destPath);
     if (!sh.test('-e', destPathDirname)) {
